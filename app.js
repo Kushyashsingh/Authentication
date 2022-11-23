@@ -22,7 +22,8 @@ app.get('get/cookies',(req,res)=>{
 })
 
 app.get('/read-cookie',(req,res)=>{
-
+    const cookie=req.cookies
+    console.log(cookies)
 })
 
 mongoose.connect("mongodb://localhost:27017/USERDATA",{useNewUrlParser:true,useUnifiedTopology:true})
